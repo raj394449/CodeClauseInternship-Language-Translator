@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+
+.container {
+    width: 700px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.wrapper {
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+}
+
+.wrapper .text-input {
+    display: flex;
+    border-bottom: 1px solid gainsboro;
+}
+
+.text-input textarea {
+    height: 250px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    resize: none;
+}
+
+.text-input .to-text {
+    border-left: 1px solid gainsboro;
+    border-radius: 0px;
+}
+
+.controls {
+    padding: 12px 15px;
+    list-style: none;
+}
+
+.controls .icons {
+    width: 38%;
+}
+
+.controls,
+li,
+.icons,
+.icons i {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.controls .icons i {
+    cursor: pointer;
+    font-size: 14px;
+    width: 40px;
+    justify-content: center;
+}
+
+.controls .row select {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.controls .row.from .icons {
+    padding-right: 15px;
+    border-right: 1px solid gainsboro;
+}
+
+.controls .row.to .icons {
+    padding-left: 15px;
+    border-left: 1px solid gainsboro;
+}
+
+.controls .exchange {
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.container button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    background: gray;
+    color: white;
+}
